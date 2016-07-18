@@ -1,87 +1,126 @@
-.wrapper {
-    text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans);
+
+* {
+    margin: 0;
 }
 
-.content {
-    display: inline-block;
-    text-align: left;
-    background: white;
-    margin: 0 auto;
-    padding: 10px;
-    margin-top: 30px;
-    border: 1px solid #dddddd;
-    -moz-box-shadow: 5px 5px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 5px 5px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px rgba(0,0,0,0.2);
+hr {
+    border: 0;
+    border-bottom: 1px solid #bbb;
+    margin: 5px 0;
 }
 
-.container-main {
-    width: 1170px;
-    text-align: justify;
-    color: #5a5021;
-    font-family: verdana, sans-serif;
-}
-
-.subcontainer {
-    text-align: left;
-    color: inherit;
-    display: inline-block;
-}
-
-.rule-right {
-    border-right: 2px solid #ddd;
-}
-
-.rule-left {
-    border-left: 2px solid #ddd;
-}
-
-.rule-bottom {
-    border-bottom: 2px solid #ddd;
-}
-
-.subcontainer-1 {
-    width: 25% fixed;
-}
-
-.subcontainer-2 {
-    width: 50% fixed;
-}
-
-.subcontainer-3 {
-    width: 75% fixed;
-}
-
-.btn {
-    cursor: pointer;
-    width: auto;
-}
-
-#btn-edit {
-    width: 43%;
-}
-
-.container-main > p {
-    color: #000;
+.parent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
 }
 
 .header {
+    position: relative;
     text-align: center;
-    color: #5a5021;
-    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid #bbb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
 }
 
-.no-margin {
-    margin: 0;
+.content {
+    position: relative;
+    width: 100%;
 }
 
-.spacer-margin {
-    margin: 0;
-    margin-top: 5;
-    margin-bottom: 5;
+.content > div {
+    display: inline-block;
+    position: relative;
 }
 
-#load {
-    visibility: hidden;
-    z-index: -1;
+.content .nav {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #bbb;
+}
+
+.content .page {
+    position: absolute;
+    padding: 10px;
+    width: 500px;
+}
+
+.nav-menu {
+    position: relative;
+    width: 100%;
+}
+
+.nav-menu h4 {
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+.nav-menu .menu a.item {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #bbb;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: background .25s, color .25s;
+    color: teal;
+}
+
+.nav-menu .menu a.item:hover {
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-menu .menu a.item.active {
+    color: #1D1075;
+}
+
+a.item i {
+    margin-right: 5px;
+}
+
+.page > div {
+    width: 100%;
+}
+
+.page > div h2 {
+    padding: 5px 0;
+}
+
+.packs {
+    width: 100%;
+}
+
+.packs .pack {
+    position: relative;
+    border-bottom: 1px solid #bbb;
+    width: 100%;
+    padding: 10px;
+}
+
+.packs .pack a {
+    position: absolute;
+    padding: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    background: teal;
+    color: #fff;
+    transition: background .25s;
+}
+
+.packs .pack a:hover {
+    background: darkcyan;
 }
