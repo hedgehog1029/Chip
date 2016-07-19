@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700);
 
 * {
     margin: 0;
@@ -123,4 +123,9 @@ a.item i {
 
 .packs .pack a:hover {
     background: darkcyan;
+}
+
+.pg-pack .mods .mod small {
+	font-size: 11px;
+	color: #aaa;
 }

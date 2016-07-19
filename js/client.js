@@ -79,12 +79,12 @@ Cookie.Sub.pack = {
 			m("h2", ctrl.pack().title),
 			m("p", ctrl.pack().desc),
 			m("hr"),
-			m("h3", "Mods"),
+			m("h3", "Mods ", m("small", "(" + ctrl.pack().mods.length + " total)")),
 			m("div.mods", [
 				ctrl.pack().mods.map(function(mod) {
 					return m("div.mod", [
-						m("h5", mod.title),
-						m("p", mod.desc)
+						m("h5", mod.name),
+						m("small", "Hash: ", mod.hash)
 					]);
 				})
 			])
